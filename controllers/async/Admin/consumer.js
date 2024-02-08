@@ -6,6 +6,7 @@ import User from "../../../models/entity/users";
 export const getAllConsumer = async (req, res) => {
   try {
     // Fetch all users with the role of "consumer"
+    //consumer
     const consumers = await User.findAll({
       where: { role: "consumer" },
       include: [
